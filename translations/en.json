@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Xiaozhi MCP Access Point",
+        "description": "Input WebSocket Access Point For XiaoZhi AI",
+        "data": {
+          "client_endpoint": "WebSocket Access Point",
+          "name": "name",
+          "llm_hass_api": "[%key:common::config_flow::data::llm_hass_api%]"
+        },
+        "data_description": {
+          "llm_hass_api": "The method for controlling Home Assistant to expose with the Model Context Protocol."
+        }
+      }
+    },
+    "error": {
+      "llm_api_required": "You must choose one api at least",
+      "single_instance_allowed": "single_instance_allowed"
+    },
+    "abort": {
+      "single_instance_allowed": "single_instance_allowed"
+    }
+  }
+}
